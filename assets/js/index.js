@@ -1,20 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const ico = document.getElementById("instagram");
-  const txt = document.getElementsByClassName("txt");
+  const icons = document.querySelectorAll('.rs-ico')
+  
+  for (const icon of icons){
+    icon.addEventListener('click', (e) => {
+      const target = e.target
+      const txt = target.previousElementSibling
 
+      if(Array.from(txt.classList).includes('expand')) {
+        txt.classList.remove('expand')
+        txt.classList.add('contract')
+      }
+      else {
+        txt.classList.remove('contract')
+        txt.classList.add('expand')
+      }
+    })
+  }
 
-  let value = "close";
-
-  ico.addEventListener("click", () => {
-    if (value == "close") {
-      txt.style.width = "115px";
-      value = "open";
-    } else {
-      txt.style.width = "0";
-      value = "close";
-    }
-  });
 });
-
-/* DESTRIPAR ARRAY DE OBJETOS PARA FUNCION
-DEL JS */
