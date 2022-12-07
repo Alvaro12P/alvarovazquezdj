@@ -13,6 +13,7 @@
     padding: 50px 25px;
     text-align: center;
     gap: 20px;
+    color: white;
 }
 
 #rrss-container{
@@ -43,7 +44,6 @@
 }
 
 .rs-text {
-    color: black;
     overflow: hidden;
     height: 100%;
     width: 0;

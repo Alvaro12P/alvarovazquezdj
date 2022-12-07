@@ -4,6 +4,7 @@ header{
     left: 0;
     top: 0;
     z-index: 2;
+    color: white;
 }
 
 #desktop-header {
@@ -58,6 +59,7 @@ header{
 #open-menu, #close-menu{
     display: none;
     cursor: pointer;
+    user-select: none;
 }
 
 
