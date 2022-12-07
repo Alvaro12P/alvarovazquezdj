@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (id == "open-menu") {
         const boton = botonMenu.nextElementSibling;
         boton.style.display = "flex";
-        mobileMenu.style.height = "80px";
+        mobileMenu.style.height = "120px";
       } else {
         const boton = botonMenu.previousElementSibling;
         boton.style.display = "flex";
