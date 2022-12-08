@@ -19,6 +19,12 @@
     color: rgb(0, 0, 0);
 }
 
+.tittle{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
 #content>img {
     width: 100px;
 }
