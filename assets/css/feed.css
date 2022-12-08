@@ -1,0 +1,31 @@
+#instafeed {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 15rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+#instafeed a {
+    width: 100%;
+
+
+}
+
+#instafeed a > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width: 1024px) {
+    #instafeed {
+        grid-auto-rows: 30rem;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
+}
