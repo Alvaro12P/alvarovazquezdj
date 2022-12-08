@@ -12,7 +12,7 @@
     width: 100%;
     min-height: calc(100vh - 200px);
     background-color: rgb(255, 255, 255, 0.5);
-    padding: 50px 25px;
+    padding: 25px;
     align-items: center;
     text-align: center;
     gap: 20px;
@@ -127,5 +127,16 @@
     to {
         width: 0;
         padding-left: 0;
+    }
+}
+
+@media (max-width: 1000px){
+
+    #app{
+        padding: 20px;
+    }
+
+    #content {
+        padding: 15px;
     }
 }
