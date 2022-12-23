@@ -1,39 +1,83 @@
 #app {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: calc(100vh - 100px);
-    margin-top: 50px;
-    background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  margin-top: 50px;
+  background-color: #252525;
+  gap: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  width: 100%;
+  padding: 32px;
+  height: 100vh;
+}
+
+#form-title {
+  margin-bottom: 24px;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+#calendar {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+a.fc-event.fc-event-start.fc-event-end.fc-event-past.evento.fc-daygrid-event.fc-daygrid-block-event.fc-h-event {
+  margin: 0;
+  font-size: 8px;
+  text-align: center;
+}
+
+.fc-toolbar-chunk {
+  display: flex;
+}
+
+h2#fc-dom-1 {
+  text-transform: uppercase;
+  font-size: medium;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #app {
+    flex-direction: row;
+    gap: 25px;
+    padding: 25px;
   }
-  
+
   #form-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #1e1e1e;
-    width: 100%;
-    padding: 32px;
-    height: 100vh;
+    width: auto;
+    height: 564px;
   }
-  
-  #form-title {
-    margin-bottom: 24px;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    font-weight: 500;
-    text-align: center;
-    color: white;
+
+  #sideBar-Right {
+    width: 500px;
   }
-  
-  @media (min-width: 768px) {
-    #form-container {
-      width: 500px;
-      height: auto;
-      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-        0 4px 6px -4px rgb(0 0 0 / 0.1);
-      border-radius: 20px;
-    }
+
+  .wrapper {
+    height: 100%;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 20px;
   }
+
+  a.fc-event.fc-event-start.fc-event-end.fc-event-past.evento.fc-daygrid-event.fc-daygrid-block-event.fc-h-event {
+    font-size: 11px;
+  }
+
+}
